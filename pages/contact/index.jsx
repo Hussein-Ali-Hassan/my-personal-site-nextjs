@@ -34,16 +34,16 @@ export default function Contact() {
   };
 
   return (
-    <section className="mt-8">
-      <form ref={form} className="mt-3 md:w-[40vw]" onSubmit={onSubmit}>
-        <div class=" relative">
-          <label for="name" class="text-gray-700">
+    <section>
+      <form ref={form} className="mt-3" onSubmit={onSubmit}>
+        <div className=" relative">
+          <label htmlFor="name" className="text-gray-700">
             Name
           </label>
           <input
             ref={nameRef}
             type="text"
-            class=" mt-1 w-full flex-1 appearance-none rounded-lg border border-transparent border-gray-300 bg-white py-2 px-4 text-base text-gray-700 placeholder-gray-400 shadow-sm hover:border-blue-400 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className=" mt-1 w-full flex-1 appearance-none rounded-lg border border-transparent border-gray-300 bg-white py-2 px-4 text-base text-gray-700 placeholder-gray-400 shadow-sm hover:border-blue-400 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
             id="name"
             name="name"
             placeholder="Your name"
@@ -51,8 +51,8 @@ export default function Contact() {
           />
         </div>
 
-        <div class=" relative mt-3">
-          <label for="email" class="text-gray-700">
+        <div className=" relative mt-3">
+          <label htmlFor="email" className="text-gray-700">
             Email
           </label>
           <input
@@ -61,19 +61,19 @@ export default function Contact() {
             aria-describedby="emailHelp"
             required
             id="email"
-            class=" mt-1 w-full flex-1 appearance-none rounded-lg border border-transparent border-gray-300 bg-white py-2 px-4 text-base text-gray-700 placeholder-gray-400 shadow-sm hover:border-blue-400 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className=" mt-1 w-full flex-1 appearance-none rounded-lg border border-transparent border-gray-300 bg-white py-2 px-4 text-base text-gray-700 placeholder-gray-400 shadow-sm hover:border-blue-400 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
             name="email"
             placeholder="Your email"
           />
         </div>
         <div className="mt-3">
-          <label for="message" class="text-gray-700">
+          <label htmlFor="message" className="text-gray-700">
             Message
           </label>
           <textarea
             ref={messageRef}
             required
-            class="mt-1 w-full flex-1 appearance-none rounded-lg border border-gray-300 bg-white py-2 px-4 text-base text-gray-700 placeholder-gray-400 hover:border-blue-400 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="mt-1 w-full flex-1 appearance-none rounded-lg border border-gray-300 bg-white py-2 px-4 text-base text-gray-700 placeholder-gray-400 hover:border-blue-400 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
             id="message"
             placeholder="Your message"
             name="message"
@@ -90,7 +90,6 @@ export default function Contact() {
           Send
         </button>
       </form>
-   
     </section>
   );
 }
