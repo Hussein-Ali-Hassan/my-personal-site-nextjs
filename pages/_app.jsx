@@ -55,7 +55,7 @@ function MyApp({ Component, pageProps }) {
         <section className="mt-12 lg:pl-32">
           <div className="max-w-md">
             <Component {...pageProps} />
-            <Footer/>
+            <Footer />
           </div>
         </section>
       </main>
