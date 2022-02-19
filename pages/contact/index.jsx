@@ -2,6 +2,8 @@ import { useRef } from "react";
 import toast from "react-hot-toast";
 import emailjs from "emailjs-com";
 
+import SEO from "@/components/SEO";
+
 export default function Contact() {
   const form = useRef();
   const nameRef = useRef();
@@ -34,62 +36,70 @@ export default function Contact() {
   };
 
   return (
-    <section>
-      <form ref={form} className="mt-3" onSubmit={onSubmit}>
-        <div className=" relative">
-          <label htmlFor="name" className="text-gray-700">
-            Name
-          </label>
-          <input
-            ref={nameRef}
-            type="text"
-            className=" mt-1 w-full flex-1 appearance-none rounded-lg border border-transparent border-gray-300 bg-white py-2 px-4 text-base text-gray-700 placeholder-gray-400 shadow-sm hover:border-blue-400 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
-            id="name"
-            name="name"
-            placeholder="Your name"
-            required
-          />
-        </div>
+    <>
+      <SEO
+        title="Hussein Hassan | Contact me"
+        description="My work varies between management systems, Landing pages,
+    E-Commerce sites, Mobile & Desktop apps.."
+        keywords="Software development, react, nodejs, prisma, planetscale, management systems, CMS, blogs, apps, react native, tailwindcss, authentication, backend, frontend, mobile, desktop, serverless."
+      />
+      <section>
+        <form ref={form} className="mt-3" onSubmit={onSubmit}>
+          <div className=" relative">
+            <label htmlFor="name" className="text-gray-700">
+              Name
+            </label>
+            <input
+              ref={nameRef}
+              type="text"
+              className=" mt-1 w-full flex-1 appearance-none rounded-lg border border-transparent border-gray-300 bg-white py-2 px-4 text-base text-gray-700 placeholder-gray-400 shadow-sm hover:border-blue-400 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            />
+          </div>
 
-        <div className=" relative mt-3">
-          <label htmlFor="email" className="text-gray-700">
-            Email
-          </label>
-          <input
-            ref={emailRef}
-            type="text"
-            aria-describedby="emailHelp"
-            required
-            id="email"
-            className=" mt-1 w-full flex-1 appearance-none rounded-lg border border-transparent border-gray-300 bg-white py-2 px-4 text-base text-gray-700 placeholder-gray-400 shadow-sm hover:border-blue-400 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
-            name="email"
-            placeholder="Your email"
-          />
-        </div>
-        <div className="mt-3">
-          <label htmlFor="message" className="text-gray-700">
-            Message
-          </label>
-          <textarea
-            ref={messageRef}
-            required
-            className="mt-1 w-full flex-1 appearance-none rounded-lg border border-gray-300 bg-white py-2 px-4 text-base text-gray-700 placeholder-gray-400 hover:border-blue-400 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
-            id="message"
-            placeholder="Your message"
-            name="message"
-            rows="3"
-            cols="40"
-            style={{ resize: "none" }}
-          ></textarea>
-        </div>
+          <div className=" relative mt-3">
+            <label htmlFor="email" className="text-gray-700">
+              Email
+            </label>
+            <input
+              ref={emailRef}
+              type="text"
+              aria-describedby="emailHelp"
+              required
+              id="email"
+              className=" mt-1 w-full flex-1 appearance-none rounded-lg border border-transparent border-gray-300 bg-white py-2 px-4 text-base text-gray-700 placeholder-gray-400 shadow-sm hover:border-blue-400 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
+              name="email"
+              placeholder="Your email"
+            />
+          </div>
+          <div className="mt-3">
+            <label htmlFor="message" className="text-gray-700">
+              Message
+            </label>
+            <textarea
+              ref={messageRef}
+              required
+              className="mt-1 w-full flex-1 appearance-none rounded-lg border border-gray-300 bg-white py-2 px-4 text-base text-gray-700 placeholder-gray-400 hover:border-blue-400 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
+              id="message"
+              placeholder="Your message"
+              name="message"
+              rows="3"
+              cols="40"
+              style={{ resize: "none" }}
+            ></textarea>
+          </div>
 
-        <button
-          type="submit"
-          className="mt-3 w-full rounded-lg border bg-white px-4 py-2 text-base font-medium text-black hover:bg-gray-100"
-        >
-          Send
-        </button>
-      </form>
-    </section>
+          <button
+            type="submit"
+            className="mt-3 w-full rounded-lg border bg-white px-4 py-2 text-base font-medium text-black hover:bg-gray-100"
+          >
+            Send
+          </button>
+        </form>
+      </section>
+    </>
   );
 }
