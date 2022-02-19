@@ -5,8 +5,7 @@ export default function Projects() {
     <>
       <SEO
         title="Hussein Hassan | Projects"
-        description="My work varies between management systems, Landing pages,
-    E-Commerce sites, Mobile & Desktop apps.."
+        description="My work varies between management systems, Landing pages, E-Commerce sites, Mobile & Desktop apps.."
         keywords="Software development, react, nodejs, prisma, planetscale, management systems, CMS, blogs, apps, react native, tailwindcss, authentication, backend, frontend, mobile, desktop, serverless."
       />
       <section>
