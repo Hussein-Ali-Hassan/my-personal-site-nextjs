@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Toaster } from "react-hot-toast";
 
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
@@ -54,6 +55,7 @@ function MyApp({ Component, pageProps }) {
         <section className="mt-12 lg:pl-32">
           <div className="max-w-md">
             <Component {...pageProps} />
+            <Footer/>
           </div>
         </section>
       </main>
