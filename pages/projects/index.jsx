@@ -74,7 +74,8 @@ function WebProject({ name, problem, requirements, solution, tech, href }) {
       {href && (
         <div>
           <a
-            href={href}
+            href={href} 
+            rel="noreferrer"
             target="_blank"
             className="text-sm text-gray-600 no-underline hover:text-black hover:underline"
           >
@@ -109,6 +110,7 @@ function MobileProject({ name, problem, requirements, solution, tech, href }) {
         <div>
           <a
             href={href}
+          
             download
             className="text-sm text-gray-600 no-underline hover:text-black hover:underline"
           >
