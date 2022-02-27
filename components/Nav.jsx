@@ -26,7 +26,7 @@ export default function Nav() {
               className={`${
                 pathname === "/services"
                   ? "text-black underline"
-                  : "text-gray-400"
+                  : "text-gray-500"
               } cursor-pointer font-semibold hover:text-black`}
             >
               Services
@@ -37,7 +37,7 @@ export default function Nav() {
               className={`${
                 pathname === "/projects"
                   ? "text-black underline"
-                  : "text-gray-400"
+                  : "text-gray-500"
               } cursor-pointer font-semibold hover:text-black`}
             >
               Projects
@@ -48,7 +48,7 @@ export default function Nav() {
               className={`${
                 pathname === "/contact"
                   ? "text-black underline"
-                  : "text-gray-400"
+                  : "text-gray-500"
               } cursor-pointer font-semibold hover:text-black`}
             >
               Contact

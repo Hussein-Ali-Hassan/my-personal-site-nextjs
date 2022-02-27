@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 import SEO from "@/components/SEO";
 
@@ -11,7 +12,14 @@ export default function Home() {
         keywords="Software development, react, nodejs, prisma, planetscale, management systems, CMS, blogs, apps, react native, tailwindcss, authentication, backend, frontend, mobile, desktop, serverless."
       />
       <section>
-        <h2 className="mb-4 text-2xl font-extrabold text-black">Who am I?</h2>
+        <motion.h2
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ type: "spring", stiffness: 100, duration: 0.9 }}
+          className="mb-4 text-2xl font-extrabold text-black"
+        >
+          Who am I?
+        </motion.h2>
         <article className="space-y-6 text-lg leading-normal text-gray-600">
           <p>
             I'm

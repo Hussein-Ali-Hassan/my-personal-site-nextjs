@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import toast from "react-hot-toast";
 import emailjs from "emailjs-com";
+import { motion } from "framer-motion";
 
 import SEO from "@/components/SEO";
 
@@ -44,9 +45,14 @@ export default function Contact() {
         keywords="Software development, react, nodejs, prisma, planetscale, management systems, CMS, blogs, apps, react native, tailwindcss, authentication, backend, frontend, mobile, desktop, serverless."
       />
       <section>
-        <h2 className="mb-4 text-xl font-bold text-black">
+        <motion.h2
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ type: "spring", stiffness: 100, duration: 0.9 }}
+          className="mb-4 text-xl font-bold text-black"
+        >
           Consultancy, capability or your next project, I'm happy to chat.
-        </h2>
+        </motion.h2>
         <form ref={form} className="mt-3" onSubmit={onSubmit}>
           <div className=" relative">
             <label htmlFor="name" className="text-gray-700">

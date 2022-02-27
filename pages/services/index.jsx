@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import SEO from "@/components/SEO";
 
 const services = [
@@ -38,9 +40,14 @@ export default function Services() {
         keywords="Software development, react, nodejs, prisma, planetscale, management systems, CMS, blogs, apps, react native, tailwindcss, authentication, backend, frontend, mobile, desktop, serverless."
       />
       <section>
-        <h2 className="mb-4 text-xl font-bold text-black">
+        <motion.h2
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ type: "spring", stiffness: 100, duration: 0.9 }}
+          className="mb-4 text-xl font-bold text-black"
+        >
           What I provide and how I can help you..?
-        </h2>
+        </motion.h2>
         <article className="space-y-6 text-base leading-normal text-gray-600">
           <p>My services fall into 5 different categories:</p>
           {services.map((service, index) => (
