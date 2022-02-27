@@ -14,7 +14,7 @@ export default function Home() {
         <h2 className="mb-4 text-2xl font-extrabold text-black">Who am I?</h2>
         <article className="space-y-6 text-lg leading-normal text-gray-600">
           <p>
-            I'm{" "}
+            I'm
             <a
               href="https://www.instagram.com/husseinhassan.me/"
               target="_blank"
@@ -34,11 +34,12 @@ export default function Home() {
           </p>
           <p>
             If you have a business and want to go online, improve your workflow
-            or enhance your daily routine with modern systems and tools.{" "}
+            or enhance your daily routine with modern systems and tools. Every
+            partnership starts with a{" "}
             <Link href="/contact" passHref>
-              <span className="cursor-pointer font-bold">Contact me</span>
-            </Link>{" "}
-            and we will discuss your ideas.
+              <span className="cursor-pointer font-bold">conversation</span>
+            </Link>
+            .
           </p>
           <p>
             You can check the list of services I provide and technologies I work

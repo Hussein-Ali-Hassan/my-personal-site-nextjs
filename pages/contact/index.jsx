@@ -44,6 +44,9 @@ export default function Contact() {
         keywords="Software development, react, nodejs, prisma, planetscale, management systems, CMS, blogs, apps, react native, tailwindcss, authentication, backend, frontend, mobile, desktop, serverless."
       />
       <section>
+        <h2 className="mb-4 text-xl font-bold text-black">
+          Consultancy, capability or your next project, I'm happy to chat.
+        </h2>
         <form ref={form} className="mt-3" onSubmit={onSubmit}>
           <div className=" relative">
             <label htmlFor="name" className="text-gray-700">

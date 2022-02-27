@@ -7,4 +7,4 @@ const nextConfig = {
     USER_ID: "user_laUisAw4lPS1VrFWbZ2Ad",
   },
 };
-module.exports = nextConfig; 
+module.exports = nextConfig;

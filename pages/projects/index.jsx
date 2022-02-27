@@ -64,7 +64,7 @@ export default function Projects() {
 function WebProject({ name, problem, requirements, solution, tech, href }) {
   return (
     <div className="space-y-2">
-      <strong className="mb-4 block text-xl font-bold text-black no-underline">
+      <strong className="mb-4 block text-xl font-bold text-black">
         {name}
       </strong>
       <p className="mt-1 text-base leading-normal text-gray-600">
@@ -99,7 +99,7 @@ function WebProject({ name, problem, requirements, solution, tech, href }) {
 function MobileProject({ name, problem, requirements, solution, tech, href }) {
   return (
     <div className="space-y-2">
-      <strong className="mb-4 block text-xl font-bold text-black no-underline">
+      <strong className="mb-4 block text-xl font-bold text-black">
         {name}
       </strong>
       <p className="mt-1 text-base leading-normal text-gray-600">
