@@ -11,6 +11,7 @@
     "add": "npm run format && git add ."
   },
   "dependencies": {
+    "@formspree/react": "^2.2.4",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^6.2.8",
     "next": "12.1.0",

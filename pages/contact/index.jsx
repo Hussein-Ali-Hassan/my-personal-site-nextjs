@@ -1,23 +1,26 @@
 import { useRef } from "react";
 import toast from "react-hot-toast";
-import emailjs from "emailjs-com";
 import { motion } from "framer-motion";
 
 import SEO from "@/components/SEO";
 
 export default function Contact() {
-  const form = useRef();
   const nameRef = useRef();
   const emailRef = useRef();
   const messageRef = useRef();
 
   const sendEmail = async () => {
-    return emailjs.sendForm(
-      process.env.SERVICE_ID,
-      process.env.TEMPLATE_ID,
-      form.current,
-      process.env.USER_ID
-    );
+    return fetch("https://formspree.io/f/xoqrwvdz", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: nameRef.current.value,
+        email: emailRef.current.value,
+        message: messageRef.current.value,
+      }),
+    });
   };
 
   const onSubmit = (e) => {
@@ -40,8 +43,7 @@ export default function Contact() {
     <>
       <SEO
         title="Hussein Hassan | Contact me"
-        description="My work varies between management systems, Landing pages,
-    E-Commerce sites, Mobile & Desktop apps.."
+        description="My work varies between management systems, Landing pages, E-Commerce sites, Mobile & Desktop apps.."
         keywords="Software development, react, nodejs, prisma, planetscale, management systems, CMS, blogs, apps, react native, tailwindcss, authentication, backend, frontend, mobile, desktop, serverless."
       />
       <section>
@@ -53,7 +55,7 @@ export default function Contact() {
         >
           Consultancy, capability or your next project, I'm happy to chat.
         </motion.h2>
-        <form ref={form} className="mt-3" onSubmit={onSubmit}>
+        <form className="mt-3" onSubmit={onSubmit}>
           <div className=" relative">
             <label htmlFor="name" className="text-gray-700">
               Name
