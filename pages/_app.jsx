@@ -1,11 +1,17 @@
+import { useEffect } from "react";
 import Head from "next/head";
 import { Toaster } from "react-hot-toast";
+import splitbee from "@splitbee/web";
 
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    splitbee.init();
+  });
+
   return (
     <>
       <Head>
