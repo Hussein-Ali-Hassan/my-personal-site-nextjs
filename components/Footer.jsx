@@ -12,7 +12,7 @@ export default function Footer() {
         >
           Next.js
         </a>{" "}
-        & it's open source. You can check how I built it{" "}
+        . You can check the code{" "}
         <a
           href="https://github.com/Hussein-Ali-Hassan/Personal-Website/tree/main"
           rel="noreferrer"
@@ -23,7 +23,7 @@ export default function Footer() {
         </a>
       </p>
       <p className="mt-4">
-        I have also built this site using{" "}
+        I have rebuilt & updated this site using{" "}
         <a
           href="https://kit.svelte.dev"
           rel="noreferrer"
@@ -32,14 +32,14 @@ export default function Footer() {
         >
           Svelte
         </a>{" "}
-        . You can check it at{" "}
+        . You can browse it at{" "}
         <a
-          href="https://svelte.husseinhassan.me"
+          href="https://husseinhassan.me"
           rel="noreferrer"
           target="_blank"
           className="font-bold no-underline"
         >
-          svelte.husseinhassan.me
+          husseinhassan.me
         </a>
       </p>
     </footer>
